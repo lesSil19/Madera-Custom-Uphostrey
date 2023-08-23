@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewprort" content="with = device - width, intitial-scale = 1.0"> <!--allows for the screen to autoscale depentent on the screen size-->
+        <title>Madera Custom Upholstrey</title>
+        <link rel="stylesheet" href="style.css"> <!--links the style.css file where the color, fonts, padding etc is kept-->
+        <link rel="stylesheet" href="app.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Line 7 to 9 are link that allow the use of google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <!--allows the use of bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" >
+
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src="images/test.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <!--<i class="fa fa-arrow-right" onclick="hideMenu()"></i>-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" onclick="hideMenu()" style="height: 30px; width: 30px;">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Custom Designs</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+                <!--<i class="fa fa-bars" onclick="showMenu()"></i>-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" onclick="showMenu()" style="height: 30px; width: 30px;">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </nav>
+
+            <div class="text-box">
+                <h1>Furniture Repair & Upholstrey Service</h1>
+                <p>Custom made upholstrey, made to order!</p>
+                <a href="" class="hero-btn">Contanct us for Consoltation </a>
+            </div>
+        </section>
+
+
+        <!--Custom Designs-->
+        <section class="cstm-des">
+            <h1>Take A Look At These Custom Designs</h1>
+            <p>From Sofas to Wall Panels To Bed frames and More</p>
+            <div class="row">
+                <div class="cstm-des-col">
+                    <h3>Sofas</h3>
+                    <p>Take a look at these custom made sofa design!</p>
+                    <img src="images/IMG_7484.PNG">
+                </div>
+                <div class="cstm-des-col">
+                    <h3>Wall Panels</h3>
+                    <p>Take a look at these custom made Wall Panel design!</p>
+                    <img src="images/IMG_7486.PNG">
+                </div>
+                <div class="cstm-des-col">
+                    <h3>Bed Frames</h3>
+                    <p>Take a look at these custom made Bed Frame design!</p>
+                    <img src="images/IMG_7476.PNG">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--JavaScript for Toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>  
+</html>
